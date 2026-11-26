@@ -27,7 +27,7 @@ export const aboutMe: AboutMe = {
   email: "kounenfathima00@gmail.com",
   // PHOTO: put your image at public/images/profile.jpg, then uncomment the next line.
   // A portrait crop works best; the layout uses a 3:4 frame.
-  // imageUrl: "/images/profile.jpg",
+  imageUrl: "/images/profile.jpg",
   //
   // CV: put your PDF at public/cv.pdf, then uncomment the next line.
   // cvUrl: "/cv.pdf",

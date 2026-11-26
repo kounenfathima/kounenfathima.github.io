@@ -31,9 +31,20 @@ export function ExperienceEntry({ experience }: { experience: Experience }) {
           </p>
         )}
         {experience.description && (
-          <p className="text-sm text-zinc-600 leading-relaxed mt-2">
+          <p className="text-sm text-zinc-600 leading-relaxed mt-2 text-justify hyphens-auto">
             {experience.description}
           </p>
+        )}
+        {experience.bullets && experience.bullets.length > 0 && (
+          <ul className="list-disc pl-5 mt-3 space-y-2 marker:text-zinc-400">
+            {experience.bullets.map((bullet, index) => (
+              <li
+                key={index}
+                className="text-sm text-zinc-600 leading-relaxed text-justify hyphens-auto"
+                dangerouslySetInnerHTML={{ __html: bullet }}
+              />
+            ))}
+          </ul>
         )}
       </div>
     </div>
